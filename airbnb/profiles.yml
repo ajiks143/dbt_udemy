@@ -1,0 +1,10 @@
+airbnb:
+  outputs:
+    dev:
+      type: databricks
+      schema: DEV  # e.g., dbt_dev
+      host: dbc-d9d07bdd-ef18.cloud.databricks.com   # e.g., adb-1234567890.12.azuredatabricks.net
+      http_path: /sql/1.0/warehouses/a3bc045e440d16dc   # e.g., /sql/1.0/warehouses/1a2b3c4d5e6f7g8h
+      threads: 4
+      catalog: AIRBNB  # e.g., hive_metastore or Unity Catalog name
+  target: dev
